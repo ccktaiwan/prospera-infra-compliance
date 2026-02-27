@@ -1,0 +1,22 @@
+{
+  "token_metadata": {
+    "uid": "TOKEN-20260228-CERT-001",
+    "schema_ref": "CMP-L1-TOKEN-2026",
+    "issuance_epoch": "Phase-6-Active"
+  },
+  "authorization_packet": {
+    "subject_gid": "GID-AIW-2026-9999",
+    "role_assigned": "ESG_VALIDATION_WORKER",
+    "competency_scope": "ISO-14064-1_AUDIT",
+    "status": "QUALIFIED"
+  },
+  "temporal_constraints": {
+    "issued_at": "2026-02-28T14:00:00Z",
+    "expires_at": "2027-02-28T14:00:00Z"
+  },
+  "evidence_link": {
+    "audit_ledger_id": "LDG-LOG-20260226-002",
+    "integrity_hash": "SHA256:d8e8fca3..."
+  },
+  "governance_seal": "PROSPERA_COUNCIL_SIG_ED25519_PLACEHOLDER"
+}
