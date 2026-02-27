@@ -1,0 +1,13 @@
+﻿{
+  "schema_id": "CMP-L1-TOKEN-2026",
+  "version": "1.0.0",
+  "token_structure": {
+    "uid": "UUID-v4",
+    "subject_gid": "string",
+    "competency_type": ["ESG_VALIDATOR", "AI_ENGINEER", "CISO"],
+    "issued_at": "ISO-8601",
+    "expires_at": "ISO-8601",
+    "audit_ref": "LDG-LOG-HASH"
+  },
+  "authority_signature": "HMAC-SHA256"
+}
