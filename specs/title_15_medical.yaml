@@ -1,0 +1,26 @@
+# ============================================================
+# AI HEADER
+# SPEC_ID: PGC-L2-REGISTRY-T15-v1.0
+# MODULE: Title_15_Medical_Canonical
+# LAYER: L2_REGISTRY
+# TYPE: Canonical_Schema
+# PURPOSE: Define regulatory requirements without logic
+# GOVERNANCE: PUBLIC_SCHEMA
+# Rescued From: 99_archive/02_REGISTRY/canonical/title_15_medical.yaml
+# ============================================================
+
+id: T15_MEDICAL_v1
+entity: healthcare_provider
+
+requirements:
+  - id: REQ_MALP_INSURANCE
+    type: INSURANCE_VALIDATION
+    severity: BLOCKER
+
+  - id: REQ_PHYSICIAN_CREDENTIALS
+    type: LICENSE_VERIFICATION
+    severity: BLOCKER
+
+  - id: REQ_BIOHAZARD_PROTOCOL
+    type: DOCUMENT_APPROVAL
+    severity: WARNING
