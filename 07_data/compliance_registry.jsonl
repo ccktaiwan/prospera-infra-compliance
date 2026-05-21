@@ -1,0 +1,3 @@
+{"repo": "prospera-os", "framework": "DNA-v1.0", "status": "compliant", "evidence": {"level": 5}, "registered_at": "2026-05-21T05:45:01.635388+00:00"}
+{"repo": "prospera-exam-platform", "framework": "DNA-v1.0", "status": "compliant", "evidence": {"level": 5}, "registered_at": "2026-05-21T05:45:01.635388+00:00"}
+{"repo": "health-check", "framework": "DNA-v1.0", "status": "ok", "evidence": {"monitor": "self-check"}, "registered_at": "2026-05-21T05:45:01.702376+00:00"}
