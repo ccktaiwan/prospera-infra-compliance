@@ -35,3 +35,6 @@ J1 技術確認 / J2 品質審閱 / J3 架構決策
 
 # Version: 1.0 | 2026-04-30
 # Human-Reviewed: yes
+## Living Organism Role
+philosophy: PROSPERA_OS_PHILOSOPHY.md
+organism_role: 皮膚屏障（外部掃描）
