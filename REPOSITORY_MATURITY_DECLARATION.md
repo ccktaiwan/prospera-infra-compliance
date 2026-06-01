@@ -2,7 +2,7 @@
 Repo: prospera-infra-compliance
 Ring: R6 Infrastructure
 Date: 2026-05-31
-Declared Level: 3
+Declared Level: 5
 
 ## Level 3 達成條件
 - [x] CONTRACT.md 存在
@@ -17,3 +17,7 @@ Declared Level: 3
 
 Declared by: Claude Governance Governor
 Human-Reviewed: PENDING J1-B
+
+## Level 5 Evidence
+- monitoring_hook.py: trigger_monitoring() + auto_remediate() (ADR-013)
+- Tests: pytest 2/2
