@@ -20,3 +20,7 @@ Date: 2026-05-31
 ## Boundary
 - 只讀，不修改任何 repo
 - 掃描結果寫入 prospera-standard-audit
+
+## Governing Spec
+Spec: prospera-standard-compliance
+Reference Type: semantic
