@@ -1,10 +1,10 @@
-# AGENTS.md — prospera-compliance-registry
+# AGENTS.md — prospera-infra-compliance
 # Version: 1.0 | 2026-04-30
 # Governance Reference: Prospera-Governance-Core v3.0
 # Pipeline Reference: Prospera-Workflow-Engine v1.0
 
 ## 1. REPO IDENTITY
-Repo: ccktaiwan/prospera-compliance-registry
+Repo: ccktaiwan/prospera-infra-compliance
 Layer: L3 — Compliance
 Role: 合規中心
 

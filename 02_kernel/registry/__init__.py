@@ -1,2 +1,2 @@
-﻿# Registry loader for prospera-compliance-registry
+﻿# Registry loader for prospera-infra-compliance
 REGISTRY = {}

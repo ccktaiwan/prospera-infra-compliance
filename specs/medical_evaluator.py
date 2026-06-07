@@ -5,7 +5,7 @@
 # Model:            claude-sonnet-4-6
 # Phase:            Phase 4 - Execution & Enforcement
 # Layer:            L3 - Compliance
-# Target Repo:      prospera-compliance-registry
+# Target Repo:      prospera-infra-compliance
 # Governing Codex:  prospera-engineering-codex v1.0
 # Human-Reviewed:   PENDING
 # Review By:        PENDING

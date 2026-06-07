@@ -1,6 +1,6 @@
 ---
-# prospera-compliance-registry Constitution
-Prospera-ID: prospera-compliance-registry
+# prospera-infra-compliance Constitution
+Prospera-ID: prospera-infra-compliance
 Layer: L4
 Governed-By: prospera-engineering-codex v1.0
 Owner: ccktaiwan

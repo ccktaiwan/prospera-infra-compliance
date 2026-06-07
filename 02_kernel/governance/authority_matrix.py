@@ -1,6 +1,6 @@
 ﻿"""
 Prospera Authority Matrix
-Repo: prospera-compliance-registry
+Repo: prospera-infra-compliance
 Version: v1.0
 """
 AUTHORITY_MATRIX = {

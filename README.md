@@ -1,5 +1,5 @@
 ---
-Prospera-ID: prospera-compliance-registry
+Prospera-ID: prospera-infra-compliance
 Governance-Category: INFRA
 Human-Authorizing-Engineer: ccktaiwan (MND-Authority)
 AI-Engineering-Worker: Google AI Studio (Gemini 1.5 Pro) [Clerical-Expansion-Only]
