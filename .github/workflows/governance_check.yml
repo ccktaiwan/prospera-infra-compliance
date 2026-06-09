@@ -1,0 +1,45 @@
+---
+# yamllint disable rule:truthy
+# 集中式治理 producer 範本（thin caller）。
+# job id = governance-check = branch protection 的 required context。
+# 邏輯集中於 infra-ci/scripts/governance_check.py（單一真源，禁各 repo 手改邏輯）；
+# 本檔只負責取腳本並執行。改邏輯只改 infra-ci 一處，全 repo 下次 run 自動生效。
+# 部署：複製到目標 repo 的 .github/workflows/governance_check.yml（檔名固定）。
+# 來源：2026-06-09 L3 稽核 PENDING-024 root-cause-1 修復。
+name: Governance Check
+"on":
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  governance-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Fetch central governance-check logic (infra-ci SSOT)
+        run: |
+          curl -fsSL \
+            https://raw.githubusercontent.com/ccktaiwan/prospera-infra-ci/main/scripts/governance_check.py \
+            -o /tmp/governance_check.py
+
+      - name: Run governance-check
+        run: python3 /tmp/governance_check.py
+
+      - name: Governance summary
+        run: |
+          echo "## Governance Check" >> $GITHUB_STEP_SUMMARY
+          echo "- Producer: infra-ci/scripts/governance_check.py (central SSOT)" >> $GITHUB_STEP_SUMMARY
+          echo "- enforce_admins=false（保留自主 push）" >> $GITHUB_STEP_SUMMARY
+          echo "- Ref: ${{ github.ref }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Run: ${{ github.run_id }}" >> $GITHUB_STEP_SUMMARY
