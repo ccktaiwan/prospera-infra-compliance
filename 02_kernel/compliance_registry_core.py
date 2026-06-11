@@ -1,4 +1,4 @@
-# AI-GENERATED | Model: claude-sonnet-4-6 | Phase: 5 | Human-Reviewed: AI
+# AI-GENERATED | Model: claude-sonnet-4-6 | Phase: 5 | IP: 創造性歸 Kevin(發明人), AI 為執行工具 (ADR-0032)
 """Compliance Registry Core — register and query repo compliance status."""
 import json
 from datetime import datetime, timezone

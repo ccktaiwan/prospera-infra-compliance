@@ -7,7 +7,7 @@
 # Layer:            L3 - Compliance
 # Target Repo:      prospera-infra-compliance
 # Governing Codex:  prospera-engineering-codex v1.0
-# Human-Reviewed:   PENDING
+# 設計: 依 Kevin 架構 ｜執行: AI 工具(claude.ai+Claude Code) ｜驗證: 無機制驗證 ｜IP: 創造性歸 Kevin(發明人), AI 為執行工具 (ADR-0032)
 # Review By:        PENDING
 # Review Date:      PENDING
 # ══════════════════════════════════════
