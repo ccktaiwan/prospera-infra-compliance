@@ -1,3 +1,6 @@
+# ── Prospera SYSTEM HEADER (ADR-0032/SBOM) ──
+# 性質:engineering ｜設計:Kevin 架構 ｜執行:AI 工具(claude.ai+Claude Code)
+# 驗證:無機制驗證 ｜IP:創造性歸 Kevin(發明人), AI 為執行工具 (ADR-0032)
 """
 pipeline/memory.py  —  Manifest & Best-Practice Generator
 更新 manifest.json。累積 3 個同類型 artifact 時自動生成 best_practice_{type}.md

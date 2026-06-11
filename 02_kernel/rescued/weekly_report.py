@@ -1,3 +1,6 @@
+# ── Prospera SYSTEM HEADER (ADR-0032/SBOM) ──
+# 性質:engineering ｜設計:Kevin 架構 ｜執行:AI 工具(claude.ai+Claude Code)
+# 驗證:無機制驗證 ｜IP:創造性歸 Kevin(發明人), AI 為執行工具 (ADR-0032)
 """
 weekly_report.py  —  每週自動統計報告
 每週一 09:00 執行，產生 reports/YYYY-WW.md，git commit 進 repo。
