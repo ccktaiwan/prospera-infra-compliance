@@ -1,3 +1,4 @@
+<!-- Prospera SYSTEM HEADER (ADR-0032/SBOM) | 性質:doc | 設計:Kevin 架構 | 執行:AI 工具(claude.ai+Claude Code) | 驗證:審計注入 | IP:創造性歸 Kevin(發明人) -->
 # IP_NOTICE — prospera-infra-compliance
 
 > 本 repo 全部創造性內容（架構/設計/方案/原創 code/文檔）之 **IP 歸屬 Kevin（發明人）**；AI（claude.ai+Claude Code）為**執行工具**，依 Kevin 設計落地，不取得 IP。
