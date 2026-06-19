@@ -1,0 +1,9 @@
+{
+  "name": "prospera-infra-compliance",
+  "owner": "ccktaiwan",
+  "governed_by": "prospera-constitution-governance (Gen Governance/PCGA)",
+  "sraf_phase": "phase1-l4-state-baseline",
+  "state_date": "2026-06-20",
+  "status": "active",
+  "note": "PCGA Phase 1 L4 state 證據（ADR-0115）；manifest=repo state，非塞 governance 檔。"
+}
