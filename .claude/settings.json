@@ -1,0 +1,42 @@
+{
+  "_ip_notice": "創造性歸 Kevin(發明人), AI 為執行工具 (ADR-0032)",
+  "_guardrail_notice": "Git 安全護欄 2026-06-22：deny/ask 在 auto/bypass mode 皆生效、不被 context 壓縮清除（防 auto mode 繞過自然語言邊界 issue #51689/#56865）。settings.json 共享入 git、隨 repo 走。",
+  "permissions": {
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(git commit:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr merge:*)",
+      "PowerShell(git push*)",
+      "PowerShell(git commit*)",
+      "PowerShell(gh pr create*)",
+      "PowerShell(gh pr merge*)"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git push --force-with-lease:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git checkout -- :*)",
+      "Bash(git checkout .:*)",
+      "Bash(git clean -fd:*)",
+      "Bash(git clean -fdx:*)",
+      "Bash(rm -rf:*)",
+      "Bash(rm -r:*)",
+      "Bash(git rebase:*)",
+      "Bash(git branch -D:*)",
+      "PowerShell(git push --force*)",
+      "PowerShell(git push -f*)",
+      "PowerShell(git push --force-with-lease*)",
+      "PowerShell(git reset --hard*)",
+      "PowerShell(git checkout -- *)",
+      "PowerShell(git checkout .*)",
+      "PowerShell(git clean -fd*)",
+      "PowerShell(git clean -fdx*)",
+      "PowerShell(git rebase*)",
+      "PowerShell(git branch -D*)",
+      "PowerShell(Remove-Item*-Recurse*)",
+      "PowerShell(rm -r*)"
+    ]
+  }
+}

@@ -25,3 +25,11 @@ When working in any Prospera repo:
 **Input**:   Compliance events
 **Output**:  Compliance report → dashboard
 **Owner**:   compliance pipeline
+
+## Git 操作硬規則（2026-06-22，防 auto mode 繞過）
+- 絕不在未經 Kevin/claude.ai 明確當次指令下 push、commit、開 PR
+- 「push hold」「不要動 X」等指令一旦下達，視為持續有效，即使 context 壓縮也不得恢復成自動 push
+- force-push / reset --hard / rm -rf / checkout 覆蓋 = 絕對禁止，無論任何理由（含解 merge 衝突）
+- 遇 merge 衝突 / push 被拒：停下回報選項，絕不自行升級為 force-push 或 reset
+- 收工必須由 claude.ai 明確下「push」指令才 push，預設不 push（git 操作一律顯式授權）
+- 機制保證：本規則同時硬編於 `.claude/settings.json`（deny/ask，跨 mode 不可繞過），自然語言失效時硬煞車仍在
