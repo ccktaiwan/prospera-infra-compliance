@@ -4,11 +4,19 @@
 name: "Prospera Law 1.0 Guard"
 on:
   push:
+    paths-ignore:           # CI 精簡(ADR-0169):文件/state 不觸發 Actions
+      - '**.md'
+      - '**/ADR-*.md'
+      - '**/ACTIVE_STATE.md'
+      - '**/CURRENT_STATE.md'
+      - '**/MASTER_LOG.md'
+      - '**/session-log/**'
     branches: [ main ]
   pull_request:
     branches: [ main ]
 jobs:
   governance-enforcement:
+    if: ${{ !contains(github.event.head_commit.message, '[hold]') && !contains(github.ref, 'hold') }}  # PROSPERA_HOLD_GUARD ADR-0169
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
