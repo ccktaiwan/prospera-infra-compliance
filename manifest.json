@@ -5,5 +5,7 @@
   "sraf_phase": "phase1-l4-state-baseline",
   "state_date": "2026-06-20",
   "status": "active",
-  "note": "PCGA Phase 1 L4 state 證據（ADR-0115）；manifest=repo state，非塞 governance 檔。"
+  "note": "PCGA Phase 1 L4 state 證據（ADR-0115）；manifest=repo state，非塞 governance 檔。",
+  "governance_class": "D",
+  "governance_class_ssot": "REPO_CLASSIFICATION.md (ADR-0231 類型一 fitness)"
 }
